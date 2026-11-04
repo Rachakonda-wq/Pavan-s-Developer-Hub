@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pavan's Developer Hub - Personal portfolio and projects.">
+  <title>Pavan's Developer Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <a class="brand" href="#home" data-page="home">
+      <span class="brand-mark">P</span>
+      <span>Pavan<span class="gold">.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" data-page="home" class="nav-link active">Home</a>
+      <a href="#portfolio" data-page="portfolio" class="nav-link">Portfolio</a>
+      <a href="#tasks" data-page="tasks" class="nav-link">To-Do</a>
+      <a href="#products" data-page="products" class="nav-link">Products</a>
+      <a href="#contact" data-page="contact" class="nav-link">Contact</a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="page-section active" id="home">
+
+      <div class="hero container">
+
+        <div class="hero-content">
+
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            AVAILABLE FOR OPPORTUNITIES
+          </p>
+
+          <h1>
+            Building digital<br>
+            experiences with <span class="gold">purpose.</span>
+          </h1>
+
+          <p class="hero-description">
+            Hello, I'm <strong>Rachakonda Pavan Kumar</strong>.
+            I enjoy creating responsive websites and useful digital
+            experiences through code.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-go="portfolio">
+              Explore My Portfolio <span>↗</span>
+            </button>
+
+            <button class="btn btn-outline" data-go="contact">
+              Get In Touch
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>03+</strong>
+              <span>Web Projects</span>
+            </div>
+
+            <div>
+              <strong>06+</strong>
+              <span>Core Skills</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Learning Mindset</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="hero-monogram">P<span>.</span></div>
+
+          <div class="floating-card card-code">
+            <span>⌘</span> Developer
+          </div>
+
+          <div class="floating-card card-location">
+            <span>⌖</span> Hyderabad, India
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container home-overview">
+
+        <div class="section-heading">
+          <p class="eyebrow">EXPLORE</p>
+          <h2>One hub. Multiple <span class="gold">possibilities.</span></h2>
+          <p>Explore my work, manage your daily tasks and browse products.</p>
+        </div>
+
+        <div class="overview-grid">
+
+          <article class="overview-card">
+            <span class="overview-icon">✦</span>
+            <h3>Personal Portfolio</h3>
+            <p>Discover my background, technical skills, education and projects.</p>
+            <button class="text-link" data-go="portfolio">Explore portfolio ↗</button>
+          </article>
+
+          <article class="overview-card">
+            <span class="overview-icon">✓</span>
+            <h3>To-Do Manager</h3>
+            <p>Organise everyday tasks and keep track of your progress.</p>
+            <button class="text-link" data-go="tasks">Manage tasks ↗</button>
+          </article>
+
+          <article class="overview-card">
+            <span class="overview-icon">▦</span>
+            <h3>Product Explorer</h3>
+            <p>Browse products with search, category filters and sorting.</p>
+            <button class="text-link" data-go="products">Browse products ↗</button>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section class="page-section" id="portfolio">
+
+      <div class="container page-container">
+
+        <div class="page-title">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h1>My <span class="gold">Portfolio</span></h1>
+          <p>A little about me, what I know and what I've created.</p>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div class="portfolio-top">
+
+          <article class="panel about-panel">
+
+            <p class="eyebrow">ABOUT ME</p>
+
+            <h2 id="displayName">Rachakonda Pavan Kumar</h2>
+
+            <h3 id="displayRole">Computer Science Graduate</h3>
+
+            <p id="displayBio">
+              I am a Computer Science graduate from Scient Institute of Technology.
+              I enjoy learning web technologies and building practical projects
+              that solve everyday problems.
+            </p>
+
+            <div class="about-meta">
+              <span>⌖ Hyderabad, India</span>
+              <a href="mailto:rachakondapavanrao07@gmail.com">✉ Email me</a>
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- SKILLS -->
+        <div class="content-block">
+
+          <div class="section-heading left-heading">
+            <p class="eyebrow">WHAT I KNOW</p>
+            <h2>My <span class="gold">Skills</span></h2>
+          </div>
+
+          <div class="skills-grid" id="publicSkills"></div>
+
+        </div>
+
+
+        <!-- PROJECTS -->
+        <div class="content-block">
+
+          <div class="section-heading left-heading">
+            <p class="eyebrow">WHAT I'VE BUILT</p>
+            <h2>Featured <span class="gold">Projects</span></h2>
+          </div>
+
+          <div class="projects-grid" id="publicProjects"></div>
+
+        </div>
+
+
+        <!-- EDUCATION -->
+        <div class="content-block">
+
+          <article class="panel education-panel">
+
+            <p class="eyebrow">EDUCATION</p>
+
+            <h2>B.Tech – Computer Science and Engineering</h2>
+
+            <p>Scient Institute of Technology</p>
+
+            <span class="muted">2020 – 2024</span>
+
+          </article>
+
+        </div>
+
+
+        <!-- CUSTOM SECTIONS APPEAR HERE -->
+        <div class="content-block" id="customSections"></div>
+
+
+        <!-- PORTFOLIO EDITOR AT THE BOTTOM -->
+        <div class="content-block">
+
+          <article class="panel profile-edit-panel">
+
+            <div class="panel-heading">
+
+              <div>
+                <p class="eyebrow">PORTFOLIO SETTINGS</p>
+                <h2>Update My Portfolio</h2>
+              </div>
+
+              <span class="edit-icon">✎</span>
+
+            </div>
+
+            <p class="muted">
+              Update your personal information, skills and projects whenever you need.
+            </p>
+
+            <button class="btn btn-primary" id="toggleEditor">
+              Update My Portfolio
+            </button>
+
+
+            <div class="editor-content hidden" id="profileEditor">
+
+              <!-- PROFILE -->
+              <form id="profileForm" class="form-stack">
+
+                <label>
+                  Display name
+                  <input id="editName" type="text" placeholder="Your name" required>
+                </label>
+
+                <label>
+                  Professional title
+                  <input id="editRole" type="text" placeholder="Your professional title">
+                </label>
+
+                <label>
+                  About you
+                  <textarea id="editBio" rows="4" placeholder="Write a short introduction"></textarea>
+                </label>
+
+                <button class="btn btn-primary" type="submit">
+                  Save Profile
+                </button>
+
+              </form>
+
+
+              <div class="editor-divider"></div>
+
+
+              <!-- SKILLS -->
+              <div class="editor-section">
+
+                <div class="panel-heading">
+                  <div>
+                    <p class="eyebrow">TECHNICAL ABILITIES</p>
+                    <h3>Manage Skills</h3>
+                  </div>
+                </div>
+
+                <form id="skillForm" class="inline-form">
+
+                  <input
+                    id="skillInput"
+                    type="text"
+                    placeholder="Enter a skill (e.g. Java)"
+                    required
+                  >
+
+                  <button class="btn btn-primary" type="submit">Add</button>
+
+                </form>
+
+                <p class="small-note">
+                  Edit or delete any skill from the list below.
+                </p>
+
+                <div class="manage-list" id="manageSkills"></div>
+
+              </div>
+
+
+              <div class="editor-divider"></div>
+
+
+              <!-- PROJECTS -->
+              <div class="editor-section">
+
+                <div class="panel-heading">
+                  <div>
+                    <p class="eyebrow">MY WORK</p>
+                    <h3>Manage Projects</h3>
+                  </div>
+                </div>
+
+                <form id="projectForm" class="form-stack">
+
+                  <input id="projectName" type="text" placeholder="Project name" required>
+
+                  <input id="projectDescription" type="text" placeholder="Short project description" required>
+
+                  <input id="projectLink" type="url" placeholder="Project URL (optional)">
+
+                  <button class="btn btn-primary" type="submit">
+                    Add Project
+                  </button>
+
+                </form>
+
+                <p class="small-note">
+                  You can edit or delete projects whenever you want.
+                </p>
+
+                <div class="manage-list" id="manageProjects"></div>
+
+              </div>
+
+
+              <div class="editor-divider"></div>
+
+
+              <!-- CUSTOM SECTION CREATOR -->
+              <div class="editor-section">
+
+                <div class="panel-heading">
+                  <div>
+                    <p class="eyebrow">PERSONALISE YOUR PORTFOLIO</p>
+                    <h3>Create Custom Section</h3>
+                  </div>
+                </div>
+
+                <p class="small-note">
+                  Add sections such as Experience, Certifications,
+                  Achievements or anything else you want.
+                </p>
+
+                <form id="customSectionForm" class="form-stack">
+
+                  <label>
+                    Section title
+                    <input
+                      type="text"
+                      id="customSectionTitle"
+                      placeholder="Example: Work Experience"
+                      required
+                    >
+                  </label>
+
+                  <label>
+                    Section details
+                    <textarea
+                      id="customSectionDescription"
+                      rows="4"
+                      placeholder="Write your experience, achievements or details..."
+                      required
+                    ></textarea>
+                  </label>
+
+                  <button class="btn btn-primary" type="submit">
+                    Add Custom Section
+                  </button>
+
+                </form>
+
+                <p class="small-note">
+                  Your custom sections will appear in your public portfolio.
+                  You can edit or delete them whenever you want.
+                </p>
+
+                <div class="manage-list" id="manageCustomSections"></div>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TO DO -->
+    <section class="page-section" id="tasks">
+
+      <div class="container page-container">
+
+        <div class="page-title">
+          <p class="eyebrow">STAY PRODUCTIVE</p>
+          <h1>My <span class="gold">To-Do List</span></h1>
+          <p>Add tasks, track progress and keep everything organised.</p>
+        </div>
+
+        <div class="panel todo-panel">
+
+          <form id="taskForm" class="task-entry">
+
+            <input
+              id="taskInput"
+              type="text"
+              placeholder="What do you need to do?"
+              required
+            >
+
+            <input
+              id="taskDate"
+              type="date"
+              aria-label="Task due date"
+            >
+
+            <input
+              id="taskTime"
+              type="time"
+              aria-label="Task due time"
+            >
+
+            <button class="btn btn-primary" type="submit">
+              Add Task +
+            </button>
+
+          </form>
+
+
+          <div class="task-toolbar">
+
+            <div class="task-count" id="taskCount">0 tasks</div>
+
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-task-filter="all">All</button>
+              <button class="filter-btn" data-task-filter="active">Active</button>
+              <button class="filter-btn" data-task-filter="completed">Completed</button>
+            </div>
+
+          </div>
+
+          <div class="task-list" id="taskList"></div>
+
+          <div class="task-footer">
+            <span id="taskProgress">Your tasks will appear here.</span>
+
+            <button class="text-link danger-link" id="clearCompleted">
+              Clear completed
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="page-section" id="products">
+
+      <div class="container page-container">
+
+        <div class="page-title">
+          <p class="eyebrow">DISCOVER & COMPARE</p>
+          <h1>Product <span class="gold">Explorer</span></h1>
+          <p>Search products, filter by category and sort your results.</p>
+        </div>
+
+        <div class="product-controls panel">
+
+          <input type="search" id="productSearch" placeholder="Search products...">
+
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Lifestyle">Lifestyle</option>
+          </select>
+
+          <select id="sortProducts">
+            <option value="rating">Highest rated</option>
+            <option value="price-low">Price: Low to high</option>
+            <option value="price-high">Price: High to low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+
+        </div>
+
+        <p class="product-result-count" id="productResultCount"></p>
+
+        <div class="products-grid" id="productsGrid"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="page-section" id="contact">
+
+      <div class="container page-container">
+
+        <div class="page-title">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h1>Get In <span class="gold">Touch</span></h1>
+          <p>Have a project, opportunity or question? Send me a message.</p>
+        </div>
+
+        <div class="contact-layout">
+
+          <div class="contact-info">
+
+            <article class="panel contact-info-card">
+
+              <p class="eyebrow">CONTACT DETAILS</p>
+
+              <h2>
+                Let's talk about<br>
+                <span class="gold">your ideas.</span>
+              </h2>
+
+              <p class="muted">
+                I'm open to conversations about projects, internships and opportunities.
+              </p>
+
+              <a class="contact-detail" href="mailto:rachakondapavanrao07@gmail.com">
+
+                <span class="detail-icon">✉</span>
+
+                <span>
+                  <small>Email</small>
+                  <strong>rachakondapavanrao07@gmail.com</strong>
+                </span>
+
+              </a>
+
+              <a
+                class="contact-detail"
+                href="https://www.linkedin.com/in/rachakonda-pavan-kumar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+                <span class="detail-icon">in</span>
+
+                <span>
+                  <small>LinkedIn</small>
+                  <strong>Connect with me</strong>
+                </span>
+
+              </a>
+
+              <div class="contact-detail">
+                <span class="detail-icon">⌖</span>
+                <span>
+                  <small>Location</small>
+                  <strong>Hyderabad, India</strong>
+                </span>
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- CONTACT FORM -->
+          <article class="panel contact-form-panel">
+
+            <p class="eyebrow">SEND A MESSAGE</p>
+
+            <h2>Send Message</h2>
+
+            <form id="contactForm" class="form-stack">
+
+              <label>
+                Your name
+                <input
+                  type="text"
+                  name="name"
+                  id="contactName"
+                  placeholder="Enter your name"
+                  required
+                >
+              </label>
+
+              <label>
+                Your email
+                <input
+                  type="email"
+                  name="email"
+                  id="contactEmail"
+                  placeholder="Enter your email"
+                  required
+                >
+              </label>
+
+              <label>
+                Subject
+                <input
+                  type="text"
+                  name="subject"
+                  id="contactSubject"
+                  placeholder="What is this about?"
+                  required
+                >
+              </label>
+
+              <label>
+                Message
+                <textarea
+                  name="message"
+                  id="contactMessage"
+                  rows="5"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary send-button" id="sendMessageBtn">
+                <span id="sendButtonText">Send Message</span>
+              </button>
+
+              <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+
+            </form>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-content">
+
+      <a class="brand" href="#home" data-page="home">
+        <span class="brand-mark">P</span>
+        <span>Pavan<span class="gold">.</span></span>
+      </a>
+
+      <p>Designed and developed with purpose.</p>
+
+      <span>© 2026 Pavan's Developer Hub</span>
+
+    </div>
+
+  </footer>
+
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
